@@ -1,6 +1,6 @@
 let handler = async (m, { conn }) => {
 
-  if (new Date - global.DATABASE._data.users[m.sender].lastclaim > 30000) {
+  if (new Date - global.DATABASE._data.users[m.sender].lastclaim > 500000) {
 
     conn.reply(m.chat, 'Anda bekerja dan mendapatkan +300 XP', m)  
 
